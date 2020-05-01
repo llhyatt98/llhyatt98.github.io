@@ -4,4 +4,4 @@ I am graduating in June 2020. The coronavirus forced schools to be remote for my
 
 Here is a project repository where I made a browser extension for chrome!
 
-[https://github.com/llhyatt98/SiteStall](SiteStall)
+[SiteStall](https://github.com/llhyatt98/SiteStall)
