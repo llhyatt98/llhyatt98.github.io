@@ -1,0 +1,88 @@
+/* div containing main page information */
+.container {
+    width: 90%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.container p {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    color: white;
+    font-family: verdana;
+    overflow: hidden;
+    padding: .5rem;
+}
+
+.typed-text {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-family: verdana;
+    color: white;
+}
+
+/* Animation for cursor */
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: #cccccc;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+.cursor.typing{
+    animation: none;
+}
+
+@keyframes blink {
+	0% { 
+        background-color: #cccccc;
+    }
+    49% {
+        background-color: #cccccc;
+    }
+    50% {
+        background-color: transparent;
+    }
+    99% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: #cccccc;
+    }
+}
+
+
+/* Animated gradient, full screen main page */
+#full_screen_ambient {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
