@@ -44,6 +44,7 @@ body{
     transform: translate(-50%, -50%);
 }
 
+
 .container2 {
     position: relative;
     z-index: 5;
@@ -68,6 +69,19 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     padding: .5rem;
+}
+
+.icons {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: .5rem;
+}
+
+.icons img {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* ------------------------------------------------------------ */
