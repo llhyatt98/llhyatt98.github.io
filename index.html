@@ -7,16 +7,13 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <!-- <div id="ambient"> -->
         <div class="container">
-            <div>
-                <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-            </div>
             <div class="icons">
-                <a href="https://www.linkedin.com/in/lucas-hyatt-32a609173/" target="_blank"><img src="./images/linkedin.svg" width="50px"></img></a>
-                <a href="https://github.com/llhyatt98" target="_blank"><img src="./images/github.svg" width="50px"></img></a>
-                <a href="mailto: llhyatt98@gmail.com"><img src="./images/gmail.svg" width="50px"></img></a>
-                <a href="./docs/resume.pdf" target="_blank"><img src="./images/resume.svg" width="50px"></img></a>
+                <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                    <a href="https://www.linkedin.com/in/lucas-hyatt-32a609173/" target="_blank"><img src="./images/linkedin.svg" width="50px"></img></a>
+                    <a href="https://github.com/llhyatt98" target="_blank"><img src="./images/github.svg" width="50px"></img></a>
+                    <a href="mailto: llhyatt98@gmail.com"><img src="./images/gmail.svg" width="50px"></img></a>
+                    <a href="./docs/resume.pdf" target="_blank"><img src="./images/resume.svg" width="50px"></img></a>
             </div>
             <div id="stars"></div>
             <div id="stars2"></div>
@@ -222,16 +219,55 @@
                     </div>
                 </div> 
             </div>
+
+            <div class="projects">
+                <h1 class="h1_container2">Personal Projects</h1>
+                <div class="snippet">
+                    <div style="width: 50%">
+                        <img src="assets/sitestall_data.jpg" width="45%"></img>
+                        <img src="assets/sitestall.png" width="23%" style="margin-left: 10%;"></img>
+                    </div>
+                    
+                    <div style="width: 30%;">
+                        <h1>SiteStall</h1>
+                        <p>Mozilla browser extension written in JavaScript, HTML5 and CSS3. The intention behind this project is to promote productivity while using the web. 
+                            Developed with the user in mind, the backend is where the magic happens with this app... SiteStall is capable of managing threshold intervals and blocking
+                            browser activity based on user feedback.
+                        </p> 
+                    </div>
+                </div> 
+                <div class="snippet">
+                    <div style="width: 50%">
+                        <img src="assets/tiger.bmp" width="45%"></img>
+                        <img src="assets/thermal.png" width="45%"></img>
+                    </div>
+                    <div style="width: 30%;">
+                        <h1>Image Processor</h1>
+                        <p>Program which offers 20+ different filters which can be used to enhance images formats to produce stunning results. Written in C++, 
+                            this work-horse program manages memory efficiently to produce optimal image renderings based on pixel array density.</p> 
+                    </div>
+                    <br></br>                    
+                </div>
+                <div class="snippet">
+                    <div style="width: 50%; display: flex; justify-content: center;">
+                        <img src="assets/question-mark.svg" width="25%"></img>
+                    </div>
+                    <div style="width: 30%;">
+                        <h1>Siren</h1>
+                        <p>Fully featured social media web application for sharing music. Implemented with a React/JS front-end which utilizes Redux for state management.
+                            The front-end is connected to a Node.js/Express.js REST API and utilizes material-ui for component design. Data is stored within a NoSQL fire-store database,
+                            although I am in the process of transitioning this to PostgreSQL. Why the question mark? -> 
+                            <a href="https://www.trevormckendrick.com/essays/that-time-a-developer-stole-my-idea-and-made-millions" target="_blank" style="text-decoration: none; color: blueviolet;">click me!</a>
+                        </p> 
+                    </div>
+                </div>
+            </div>
+            <div class="not_visible">
+                <p>
+                    Your current screen width is not wide enough to view my projects!
+                </p>
+            </div>
         </div>
-
-        <div class="container">
-        </div>
-
-        
-        
-
-        
-    <!-- </div> -->
 
     <script src="./scripts/main.js"></script>
 </body>
