@@ -115,6 +115,38 @@ body{
     margin-left: 10%;
 }
 
+.snippet_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+}
+
+.snippet_bottom img {
+    margin: 30px 15px;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.snippet_bottom h1 {
+    text-align: center;
+    color: white;
+    font-family: verdana;
+    margin-left: 10%;
+    margin-bottom: 4%; 
+}
+
+.snippet_bottom p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-family: verdana;
+    margin-left: 10%;
+}
+
 .not_visible {
     text-align: center;
     font-size: 1.7rem;
