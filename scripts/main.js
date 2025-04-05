@@ -12,9 +12,9 @@ const textArray = [
   "Automating deployment pipelines",
   "Solving complex challenges"
 ];
-const typingDelay = 100;
-const erasingDelay = 65;
-const newTextDelay = 1000; // Delay between current and next text
+const typingDelay = 60;
+const erasingDelay = 60;
+const newTextDelay = 500; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = 0;
 
