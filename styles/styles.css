@@ -7,10 +7,11 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     background: linear-gradient(135deg, #1a2a6c, #2a4858, #144e68);
     background-size: 400% 400%;
@@ -19,6 +20,8 @@ body {
     color: white;
     line-height: 1.6;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Modern container layout */
@@ -44,6 +47,24 @@ body {
     overflow: hidden;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Profile picture styling */
+.profile-picture {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
 }
 
 /* Hero section styling */
@@ -73,12 +94,12 @@ body {
 .title {
     font-size: 1.8rem;
     font-weight: 400;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     color: rgba(255, 255, 255, 0.8);
 }
 
 .dynamic-text {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .dynamic-text p {
@@ -90,7 +111,7 @@ body {
 
 /* CTA Buttons */
 .cta-buttons {
-    margin: 2rem 0;
+    margin: 1.5rem 0;
 }
 
 .resume-button {
@@ -210,6 +231,7 @@ body {
     transition: all 0.3s ease;
     pointer-events: none;
     white-space: nowrap;
+    z-index: 10;
 }
 
 .tech-item:hover::before {
@@ -288,6 +310,11 @@ body {
         height: auto;
         min-height: 90vh;
         overflow-y: auto;
+        max-height: none;
+    }
+    
+    body {
+        overflow-y: auto;
     }
     
     .hero-section, .tech-section {
@@ -296,21 +323,33 @@ body {
     }
     
     .hero-section {
+        padding-top: 3rem;
         padding-bottom: 1rem;
     }
     
     .tech-section {
-        padding-top: 1rem;
+        padding-top: 2rem;
+    }
+    
+    .profile-picture {
+        width: 120px;
+        height: 160px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .container {
         padding: 1rem;
+        height: 100%;
+        min-height: 100vh;
     }
     
     .content-wrapper {
         width: 95%;
+        height: auto;
+        min-height: 90vh;
+        overflow-y: auto;
+        padding: 1rem 0;
     }
     
     .tech-grid {
@@ -338,9 +377,46 @@ body {
     .tech-item {
         padding: 1rem;
     }
+    
+    .hero-section {
+        padding-top: 2.5rem;
+    }
+    
+    .tech-item::before {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+        white-space: normal;
+        max-width: 120px;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 576px) {
+    body {
+        overflow-y: auto;
+    }
+    
+    .container {
+        height: auto;
+        min-height: 100vh;
+        padding: 1rem 0.5rem;
+    }
+    
+    .content-wrapper {
+        height: auto;
+        margin: 1rem 0;
+    }
+    
+    .hero-section {
+        padding-top: 2rem;
+    }
+    
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 1.2rem;
+    }
+    
     .tech-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -364,5 +440,28 @@ body {
     .resume-button {
         padding: 0.7rem 1.4rem;
         font-size: 0.9rem;
+    }
+    
+    .tech-item::before {
+        display: none;
+    }
+    
+    .tech-item {
+        position: relative;
+    }
+    
+    .tech-item::after {
+        content: attr(title);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        font-size: 0.65rem;
+        padding: 2px 0;
+        border-radius: 0 0 12px 12px;
+        text-align: center;
+        opacity: 1;
     }
 }

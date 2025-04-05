@@ -1,7 +1,17 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Building robust web applications", "Solving complex problems", "Creating user-friendly interfaces", "Optimizing for performance"];
+const textArray = [
+  "Architecting scalable systems",
+  "Building modern web apps",
+  "Engineering efficient APIs",
+  "Crafting responsive interfaces",
+  "Optimizing database performance",
+  "Delivering seamless UX",
+  "Developing secure applications",
+  "Automating deployment pipelines",
+  "Solving complex challenges"
+];
 const typingDelay = 100;
 const erasingDelay = 65;
 const newTextDelay = 1000; // Delay between current and next text
