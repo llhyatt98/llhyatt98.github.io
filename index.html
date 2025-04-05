@@ -5,301 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Hyatt | Portfolio</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-        <div class="container">
-            <div class="icons">
-                <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-                    <a href="https://www.linkedin.com/in/lucas-hyatt-32a609173/" target="_blank"><img src="./images/linkedin.svg" width="50px"></img></a>
-                    <a href="https://github.com/llhyatt98" target="_blank"><img src="./images/github.svg" width="50px"></img></a>
-                    <a href="mailto: llhyatt98@gmail.com"><img src="./images/gmail.svg" width="50px"></img></a>
-                    <a href="./docs/resume.pdf" target="_blank"><img src="./images/resume.svg" width="50px"></img></a>
-            </div>
-            <div id="stars"></div>
-            <div id="stars2"></div>
-            <div id="stars3"></div>
-        </div>
-
-        <div class="container2">
-            <h1 class="h1_container2">Languages</h1>
-            <div class="parallax_grid">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./images/javascript.svg" width="150px"></img>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2 style="padding-top: '20%'; font-size: 30px;">JavaScript</h2>
-                        </div>
-                    </div>
+    <div class="container">
+        <div class="content-wrapper">
+            <!-- Left side - Hero section -->
+            <div class="hero-section">
+                <h1 class="name">Lucas Hyatt</h1>
+                <h2 class="title">Full Stack Engineer</h2>
+                <div class="dynamic-text">
+                    <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                </div>
+                
+                <div class="cta-buttons">
+                    <a href="./docs/resume.pdf" target="_blank" class="resume-button">
+                        <i class="fas fa-file-download"></i> Download Resume
+                    </a>
                 </div>
 
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./images/typescript.svg" width="150px"></img>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2 style="padding-top: '20%'; font-size: 30px;">TypeScript</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./images/python.svg" width="150px"></img>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2 style="padding-top: '20%'; font-size: 30px;">Python</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./images/c.svg" width="150px"></img>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2 style="padding-top: '20%'; font-size: 30px;">C</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./images/cplusplus.svg" width="150px"></img>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2 style="padding-top: '20%'; font-size: 30px;">C++</h2>
-                        </div>
-                    </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/lucas-hyatt-32a609173/" target="_blank" aria-label="LinkedIn">
+                        <img src="./images/linkedin.svg" alt="LinkedIn" width="40px">
+                    </a>
+                    <a href="https://github.com/llhyatt98" target="_blank" aria-label="GitHub">
+                        <img src="./images/github.svg" alt="GitHub" width="40px">
+                    </a>
                 </div>
             </div>
 
-            <h1 class="h1_container2">Front-end</h1>
-            <div class="parallax_grid">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./images/react.svg" width="150px"></img>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2 style="padding-top: '20%'; font-size: 30px;">React</h2>
-                        </div>
+            <!-- Right side - Technology grid -->
+            <div class="tech-section">
+                <h3 class="tech-title">Technologies</h3>
+                <div class="tech-grid">
+                    <div class="tech-item" title="JavaScript">
+                        <img src="./images/javascript.svg" alt="JavaScript">
+                    </div>
+                    <div class="tech-item" title="TypeScript">
+                        <img src="./images/typescript.svg" alt="TypeScript">
+                    </div>
+                    <div class="tech-item" title="Python (Flask, FastAPI, Django)">
+                        <img src="./images/python.svg" alt="Python">
+                    </div>
+                    <div class="tech-item" title="Golang">
+                        <img src="./images/golang.svg" alt="Golang">
+                    </div>
+                    <div class="tech-item" title="React (Next.js, Redux)">
+                        <img src="./images/react.svg" alt="React">
+                    </div>
+                    <div class="tech-item" title="React Native">
+                        <img src="./images/react-native.svg" alt="react-native">
+                    </div>
+                    <div class="tech-item" title="Node.js, Express.js">
+                        <img src="./images/nodejs.svg" alt="Node.js">
+                    </div>
+                    <div class="tech-item" title="AWS">
+                        <img src="./images/aws.svg" alt="AWS">
+                    </div>
+                    <div class="tech-item" title="Docker">
+                        <img src="./images/docker.svg" alt="Docker">
+                    </div>
+                    <div class="tech-item" title="Expo">
+                        <img src="./images/expo.svg" alt="Expo">
+                    </div>
+                    <div class="tech-item" title="PostgreSQL">
+                        <img src="./images/postgresql.svg" alt="PostgreSQL">
+                    </div>
+                    <div class="tech-item" title="Full Stack (Product, UI/UX)">
+                        <img src="./images/full-stack.svg" alt="full-stack">
                     </div>
                 </div>
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./images/redux.svg" width="150px"></img>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2 style="padding-top: '20%'; font-size: 30px;">Redux</h2>
-                        </div>
-                    </div>
-                </div>  
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./images/html5.svg" width="150px"></img>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2 style="padding-top: '20%'; font-size: 30px;">HTML5</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./images/css3.svg" width="150px"></img>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2 style="padding-top: '20%'; font-size: 30px;">CSS3</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h1 class="h1_container2">Backend</h1>
-            <div class="parallax_grid">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./images/nodejs.svg" width="150px"></img>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2 style="padding-top: '20%'; font-size: 30px;">Node.js </br> Express.js</h2>
-                        </div>
-                    </div>
-                </div>
-
-		
-                <div class="flip-card">
-                   <div class="flip-card-inner">
-                       <div class="flip-card-front">
-                           <img src="./images/nestjs.svg" width="150px"></img>
-                       </div>
-                       <div class="flip-card-back">
-                           <h2 style="padding-top: '20%'; font-size: 30px;">Nest.js </br> (Server)</h2>
-                       </div>
-                   </div>
-		</div>
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./images/flask.svg" width="150px"></img>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2 style="padding-top: '20%'; font-size: 30px;">Flask</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./images/postgresql.svg" width="150px"></img>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2 style="padding-top: '20%'; font-size: 30px;">PostgreSQL</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./images/mysql.svg" width="150px"></img>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2 style="padding-top: '20%'; font-size: 30px;">MySQL</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <h1 class="h1_container2">Infrastructure</h1>
-            <div class="parallax_grid">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./images/aws.svg" width="150px"></img>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2 style="padding-top: '20%'; font-size: 30px;">AWS</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./images/docker.svg" width="150px"></img>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2 style="padding-top: '20%'; font-size: 30px;">Docker</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./images/git.svg" width="150px"></img>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2 style="padding-top: '20%'; font-size: 30px;">Git</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./images/firebase.svg" width="150px"></img>
-                        </div>
-                        <div class="flip-card-back">
-                            <h2 style="padding-top: '20%'; font-size: 30px;">Firebase</h2>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-
-            <div class="projects">
-                <h1 class="h1_container2">Personal Projects</h1>
-                <div class="snippet">
-                    <div style="width: 50%">
-                        <img src="assets/sitestall_data.jpg" width="45%"></img>
-                        <img src="assets/sitestall.png" width="23%" style="margin-left: 10%;"></img>
-                    </div>
-                    
-                    <div style="width: 30%;">
-                        <h1>SiteStall</h1>
-                        <p>Mozilla browser extension written in JavaScript, HTML5 and CSS3. The intention behind this project is to promote productivity while using the web. 
-                            Developed with the user in mind, the backend is where the magic happens with this app... SiteStall is capable of managing threshold intervals and blocking
-                            browser activity based on user feedback.
-                        </p> 
-                    </div>
-                </div> 
-                <div class="snippet">
-                    <div class="hover_container">
-                        <img src="assets/tiger.bmp" width="90%"></img>
-                        <div class="overlay">
-                            <img src="assets/thermal.png" width="90%">
-                        </div>
-                    </div>
-                    <div class="hover_container">
-                        <img src="assets/pixelate.png" width="70%" style="margin-left: 10%;"></img>
-                        <div class="overlay">
-                            <img src="assets/flower.png" width="70%"  style="margin-left: 10%;">
-                        </div>
-                    </div>     
-
-                    <div style="width: 30%;">
-                        <h1>Image Processor</h1>
-                        <p>Program which offers 20+ different filters which can be used to enhance images formats to produce stunning results. Written in C++, 
-                            this work-horse program manages memory efficiently to produce optimal image renderings based on pixel array density. </p>
-                        </br>
-                        <p style="color: blueviolet;">
-                            Hover over each image to see enhancements!
-                        </p>
-                    </div>
-                    <br></br>                    
-                </div>
-                <div class="snippet_bottom">
-                    <div style="width: 50%; display: flex; justify-content: center;">
-                        <img src="assets/question-mark.svg" width="25%"></img>
-                    </div>
-                    <div style="width: 30%;">
-                        <h1>Siren</h1>
-                        <p> Siren is a fully featured social media web application. The application is implemented in JavaScript
-                            and features a React/Redux front-end UI which connects to a Node/Express.js REST API backend.
-                            Front-end frameworks like Material-UI were used to create modern stateful React components. Data
-                            was initially stored in a fire-store database and the app was bolstered with the use of GCP cloud
-                            functions. After noticing scalability issues with GCP, I made the decision to migrate Siren to a
-                            Postgres database, and began to use Nest.js as a modern backend framework. 
-                        </p>
-                        </br>
-                        <p>    
-                            Why no pictures? -> 
-                            <a href="https://www.trevormckendrick.com/essays/that-time-a-developer-stole-my-idea-and-made-millions" target="_blank" style="text-decoration: none; color: blueviolet;">Click me!</a>
-                        </p> 
-                    </div>
-                </div>
-            </div>
-            <div class="not_visible">
-                <p>
-                    Your current screen width is not wide enough to view my projects!
-                </p>
             </div>
         </div>
+    </div>
 
     <script src="./scripts/main.js"></script>
 </body>
